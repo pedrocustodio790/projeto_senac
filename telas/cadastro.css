@@ -1,0 +1,160 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Navbar Centralizada */
+.navbar {
+    width: 100%;
+    background-color: #111111;
+    padding: 20px 40px;
+    border-bottom: 1px solid #222222;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Container do Formulário */
+.cadastro-container {
+    width: 100%;
+    max-width: 650px;
+    padding: 0 20px;
+}
+
+.cadastro-form {
+    background-color: #0b0b0b;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1a1a1a;
+}
+
+.cadastro-form h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* Fieldset para agrupar seções */
+fieldset {
+    border: 1px solid #222222;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+/* Grupos de Campos */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #dddddd;
+}
+
+/* Estilo das Caixas de Texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    background-color: #d3d3d3; /* Cinza claro */
+    color: #000000; /* Letra preta para contraste na caixa cinza */
+    border: 1px solid #b0b0b0;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Caixa de Seleção / Termos */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.form-checkbox input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.form-checkbox label {
+    margin-bottom: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Botão Entrar */
+.btn-entrar {
+    width: 100%;
+    padding: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-entrar:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-entrar:active {
+    transform: scale(0.98);
+}
