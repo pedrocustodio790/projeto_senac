@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="./perfil.css">
+</head>
+<body>
+
+  <!-- Caixa Principal do Perfil -->
+  <main class="profile-box">
+    
+    <!-- Foto de Perfil Redonda com Botão de Troca -->
+    <div class="avatar-container">
+      <img src="https://picsum.photos/150" alt="Foto de perfil de Ana Maria Silva" class="profile-img">
+      
+      <!-- Botão de foto usando link/apenas HTML e CSS -->
+      <a href="#" class="btn-change-photo" title="Alterar foto de perfil" aria-label="Alterar foto">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Nome do Usuário -->
+    <h1 class="user-name">Ana Maria Silva</h1>
+
+    <!-- Caixa Interna de Informações com Borda #c8a96e -->
+    <section class="info-box">
+      <div class="info-group">
+        <span class="info-label">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          E-mail
+        </span>
+        <p class="info-value">ana.silva@email.com</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="info-group">
+        <span class="info-label">
+          <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          Endereço Cadastrado
+        </span>
+        <p class="info-value">
+          Rua das Flores, 123 — Apto 201<br>
+          Bairro Jardim — São Paulo / SP<br>
+          CEP: 01234-567
+        </p>
+      </div>
+    </section>
+
+    <!-- Botões de Ação -->
+    <div class="actions">
+      <a href="#" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+        </svg>
+        Editar Perfil
+      </a>
+      <a href="#" class="btn btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+          <polyline points="16 17 21 12 16 7"/>
+          <line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+        Sair
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>

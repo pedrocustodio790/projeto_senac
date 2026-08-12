@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Leilão Premium</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <!-- Fonte Inter para o corpo e Syne para um toque artístico nos títulos -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Fundo abstrato para dar o efeito de profundidade luxuoso -->
+    <div class="glow-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-title">LEILÃO</div>
+    </nav>
+
+    <div class="login-container">
+        <form class="login-form">
+            
+            <!-- Cabeçalho do Login -->
+            <div class="center-text">
+                <h2>Acessar Conta</h2>
+                <p class="subtitle">Bem-vindo de volta. Insira seus dados.</p>
+            </div>
+
+            <!-- Campo E-mail ou Usuário -->
+            <div class="form-group">
+                <label for="identificador">E-mail ou nome de usuário</label>
+                <div class="input-wrapper">
+                    <input type="text" id="identificador" required placeholder="seu@email.com ou usuário">
+                </div>
+            </div>
+
+            <!-- Campo Senha -->
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <div class="input-wrapper">
+                    <input type="password" id="senha" required placeholder="••••••••">
+                </div>
+            </div>
+
+            <!-- Botão Entrar -->
+            <button type="submit" class="btn-entrar">Entrar</button>
+
+            <!-- Link para Cadastro -->
+            <div class="register-link">
+                Não tem uma conta? <a href="#">Cadastre-se</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
