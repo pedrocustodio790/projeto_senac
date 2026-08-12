@@ -1,0 +1,181 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Fallback caso não haja fonte no projeto ainda */
+    background-color: #f9f9f9;
+}
+
+/* ================================
+   Navbar
+================================ */
+.navbar {
+    background-color: #2c3e50;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 20px;
+    height: 180px; /* Formato retangular */
+}
+
+/* Botões de Autenticação - Canto superior direito */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.auth-buttons .btn-auth {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .btn-auth:hover {
+    background-color: #ffffff;
+    color: #2c3e50;
+}
+
+/* Branding - Centro da Navbar */
+.site-branding {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.site-branding h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.site-branding strong {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+/* Links de navegação - Centralizados na parte inferior da navbar */
+.navbar-bottom {
+    margin-top: auto; /* Empurra para a parte inferior */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* ================================
+   Área de Leilões (Main)
+================================ */
+.auction-area {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Grid com trios por linha */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Estilo do Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo, inclusive a imagem */
+}
+
+/* Container e Imagem do Card com 350x350px */
+.img-container {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.card-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Box de informações abaixo da imagem */
+.card-info {
+    width: 100%;
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Preenche o espaço restante caso a altura dos cards divirja */
+}
+
+.category {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.starting-bid {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botão "Veja mais" */
+.btn-more {
+    display: inline-block;
+    text-align: center;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para o final do card-info */
+    transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+    background-color: #2980b9;
+}
