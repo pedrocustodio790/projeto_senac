@@ -1,4 +1,8 @@
-/* Reset básico e tipografia */
+@font-face {
+    font-family: 'cs-go_font';
+    src: url('../fontes/cs-go_font.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +10,17 @@
 }
 
 body {
-    font-family: sans-serif;
-    /* Fallback caso não haja fonte no projeto ainda */
-    background-color: #f9f9f9;
+    background-color: #242424;
+    font-family: 'cs-go_font', sans-serif;
 }
+
 
 /* ================================
    Navbar
 ================================ */
 .navbar {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: #111214;
+    color: #c8a96e;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -33,19 +37,19 @@ body {
 }
 
 .auth-buttons .btn-auth {
-    color: #ffffff;
+    color: #c8a96e;
     text-decoration: none;
     margin-left: 10px;
     padding: 8px 16px;
-    border: 1px solid #ffffff;
+    border: 1px solid #c8a96e;
     border-radius: 4px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .auth-buttons .btn-auth:hover {
-    background-color: #ffffff;
-    color: #2c3e50;
+    background-color: #c8a96e;
+    color: #111214;
 }
 
 /* Branding - Centro da Navbar */
@@ -61,7 +65,7 @@ body {
 
 .site-branding strong {
     font-size: 1.2rem;
-    color: #ecf0f1;
+    color: #c8a96e;
 }
 
 /* Links de navegação - Centralizados na parte inferior da navbar */
@@ -80,7 +84,7 @@ body {
 }
 
 .nav-links li a {
-    color: #ffffff;
+    color: #c8a96e;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -88,7 +92,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #3498db;
+    color: #c8a96e;
 }
 
 /* ================================
@@ -139,30 +143,36 @@ body {
 .card-info {
     width: 100%;
     padding: 20px;
-    background-color: #fafafa;
-    border-top: 1px solid #eeeeee;
+    background-color: #111214;
+    border-top: 1px solid #c8a96e;
+
     display: flex;
     flex-direction: column;
-    flex: 1;
-    /* Preenche o espaço restante caso a altura dos cards divirja */
+    align-items: flex-start;
 }
 
+
 .category {
-    font-size: 0.9rem;
-    color: #7f8c8d;
+    background-color: #c8a96e;
+    color: #111214;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
+
 
 .product-name {
     font-size: 1.3rem;
-    color: #2c3e50;
+    color: #c8a96e;
     margin-bottom: 12px;
 }
 
 .starting-bid {
     font-size: 1.2rem;
-    color: #e74c3c;
+    color: #c8a96e;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -171,7 +181,7 @@ body {
 .btn-more {
     display: inline-block;
     text-align: center;
-    background-color: #3498db;
+    background-color: #c8a96e;
     color: #ffffff;
     text-decoration: none;
     padding: 12px;
@@ -183,15 +193,15 @@ body {
 }
 
 .btn-more:hover {
-    background-color: #2980b9;
+    background-color: #3D3838;
 }
 
 /* ================================
    Footer
 ================================ */
 .site-footer {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: #111214;
+    color: #c8a96e;
     padding: 50px 20px;
     margin-top: 40px;
 }
@@ -213,7 +223,7 @@ body {
 .footer-section h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #3498db;
+    color: #c8a96e;
     text-transform: uppercase;
 }
 
@@ -240,7 +250,7 @@ body {
 .notification-box p {
     margin-bottom: 15px;
     font-size: 0.95rem;
-    color: #ecf0f1;
+    color: #c8a96e;
     line-height: 1.4;
 }
 
@@ -259,7 +269,7 @@ body {
 
 .newsletter-form button {
     padding: 12px;
-    background-color: #e74c3c;
+    background-color: #c8a96e;
     color: #ffffff;
     border: none;
     border-radius: 4px;
