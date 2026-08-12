@@ -1,22 +1,109 @@
-## site leilão 
-Este é um site de leilão de cards discos de vinil acion figure etc etc. crie tudo dentro da pasta 'telas'. 
+# Site de Leilões
 
-## tecnologia
-Use restritamente as tecnologias abaixo:
+## Objetivo do projeto
+
+Desenvolver um site de **leilões de produtos colecionáveis e diversos**, como:
+
+- Cards colecionáveis
+- Discos de vinil
+- Action figures
+- Itens de coleção
+- Brinquedos
+- Outros produtos relacionados
+
+Todo o desenvolvimento das páginas deve ser realizado dentro da pasta `telas`.
+
+##  Tecnologias
+
+Utilizar **exclusivamente** as seguintes tecnologias:
+
 - HTML
 - CSS
 
-não utilize ou instale nada neste projeto.
+### Restrições
 
-## paginas
--toda as paginas devem seguir um padrão de nomeclatura clara, se uma pagina se chamar 'index.html' deve existir um 'index.css' ** para todas as paginas ** o padrão deve ser o mesmo nome para os arquivos html e css
-- as pastas devem ser nomeadas de forma clara
-- dentro da pasta de cada pagina deve conter todos os arquivos relacionados a ela
-  - as pastas devem ter uma clareza estrutal entre elas uma pasta apenas para css e uma apenas para html
-- para isso crie na pasta telas 2 foldes um chamado css e html e coloque os arquivos de cada um em suas devidas pastas
+- Não utilizar JavaScript.
+- Não utilizar frameworks ou bibliotecas externas.
+- Não instalar dependências adicionais.
+- Não utilizar pré-processadores de CSS.
+- Não utilizar tecnologias que não estejam especificadas neste documento.
 
-## regras 
-- não utile fontes diferentes das que esta no banco de fontes do projeto
- - todas as fontes usadas no projeto devem estar na pasta ** fonte **
-- crie um arquivo .css para cada pagina, que contem sua estilização especifica
+O projeto deve funcionar utilizando somente **HTML e CSS**.
+
+##  Estrutura de pastas
+
+A estrutura do projeto deve ser organizada de maneira clara e padronizada.
+
+Dentro da pasta `telas`, devem existir duas pastas principais:
+telas/
+├── html/
+└── css/
+##  Padrão de nomenclatura
+-Para uma página chamada 'index.html' deve existir index.css
+- Todas as páginas devem seguir um padrão de nomenclatura consistente.
+  -O nome do arquivo HTML deve ser exatamente correspondente ao nome do seu arquivo CSS.
+-Para cada página HTML, deve existir um arquivo CSS específico para ela.
+ -Não utilizar nomes genéricos ou pouco descritivos, como style.css pagina1.css teste.css estiloNovo.css
+
+##  Organização dos arquivos
+-Cada página deve possuir seu próprio arquivo CSS contendo sua estilização específica.
+
+## Fontes
+- Não utilizar fontes externas ou importar fontes da internet.
+ -Devem ser utilizadas somente as fontes já disponíveis no banco de fontes do projeto.
+-Todas as fontes utilizadas pelo projeto devem estar armazenadas na pasta fonte/
+  -Não utilizar Google Fonts.
+  -Não utilizar fontes carregadas por URLs externas.
+  -Não adicionar novas fontes ao projeto sem autorização.
+  -Não utilizar uma fonte que não esteja disponível na pasta fonte/
+
+## CSS
+-Cada página deve possuir um arquivo CSS próprio.
+-O CSS de cada página deve conter principalmente os estilos específicos daquela página.
+-Evitar criar um único arquivo CSS gigante contendo toda a estilização do projeto.
+
+## Regras gerais de desenvolvimento
+- Manter uma estrutura de arquivos simples e organizada.
+- Utilizar nomes de arquivos claros e descritivos.
+- Manter o mesmo padrão de nomenclatura em todo o projeto.
+- Utilizar somente HTML e CSS.
+- Não instalar dependências.
+- Não utilizar frameworks.
+- Não utilizar bibliotecas externas.
+- Não utilizar JavaScript.
+- Não utilizar fontes externas.
+- Manter as fontes utilizadas dentro da pasta fonte.
+- Criar um arquivo CSS correspondente para cada página HTML.
+- Manter os arquivos HTML dentro de telas/html.
+- Manter os arquivos CSS dentro de telas/css.
+##  Estrutura esperada
+
+
+Ao final, a estrutura básica do projeto deve seguir este padrão:
+
+projeto/
+│
+├── fonte/
+│   └── [fontes permitidas pelo projeto]
+│
+├── telas/
+│   │
+│   ├── html/
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── cadastro.html
+│   │   ├── produtos.html
+│   │   └── leilao.html
+│   │
+│   └── css/
+│       ├── index.css
+│       ├── login.css
+│       ├── cadastro.css
+│       ├── produtos.css
+│       └── leilao.css
+│
+└── [demais arquivos necessários]
+
+A estrutura pode receber novas páginas conforme o desenvolvimento do sistema, desde que elas sigam as mesmas regras de organização e nomenclatura.  
+
 
