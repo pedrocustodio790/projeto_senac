@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: sans-serif; /* Fallback caso não haja fonte no projeto ainda */
+    font-family: sans-serif;
+    /* Fallback caso não haja fonte no projeto ainda */
     background-color: #f9f9f9;
 }
 
@@ -20,7 +21,8 @@ body {
     flex-direction: column;
     position: relative;
     padding-top: 20px;
-    height: 180px; /* Formato retangular */
+    height: 180px;
+    /* Formato retangular */
 }
 
 /* Botões de Autenticação - Canto superior direito */
@@ -64,7 +66,8 @@ body {
 
 /* Links de navegação - Centralizados na parte inferior da navbar */
 .navbar-bottom {
-    margin-top: auto; /* Empurra para a parte inferior */
+    margin-top: auto;
+    /* Empurra para a parte inferior */
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
@@ -109,10 +112,11 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo, inclusive a imagem */
+    align-items: center;
+    /* Centraliza o conteúdo, inclusive a imagem */
 }
 
 /* Container e Imagem do Card com 350x350px */
@@ -139,7 +143,8 @@ body {
     border-top: 1px solid #eeeeee;
     display: flex;
     flex-direction: column;
-    flex: 1; /* Preenche o espaço restante caso a altura dos cards divirja */
+    flex: 1;
+    /* Preenche o espaço restante caso a altura dos cards divirja */
 }
 
 .category {
@@ -172,7 +177,8 @@ body {
     padding: 12px;
     border-radius: 4px;
     font-weight: bold;
-    margin-top: auto; /* Empurra o botão para o final do card-info */
+    margin-top: auto;
+    /* Empurra o botão para o final do card-info */
     transition: background-color 0.3s;
 }
 
