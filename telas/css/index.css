@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: sans-serif; /* Fallback caso não haja fonte no projeto ainda */
+    font-family: sans-serif;
+    /* Fallback caso não haja fonte no projeto ainda */
     background-color: #f9f9f9;
 }
 
@@ -20,7 +21,8 @@ body {
     flex-direction: column;
     position: relative;
     padding-top: 20px;
-    height: 180px; /* Formato retangular */
+    height: 180px;
+    /* Formato retangular */
 }
 
 /* Botões de Autenticação - Canto superior direito */
@@ -64,7 +66,8 @@ body {
 
 /* Links de navegação - Centralizados na parte inferior da navbar */
 .navbar-bottom {
-    margin-top: auto; /* Empurra para a parte inferior */
+    margin-top: auto;
+    /* Empurra para a parte inferior */
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
@@ -109,10 +112,11 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo, inclusive a imagem */
+    align-items: center;
+    /* Centraliza o conteúdo, inclusive a imagem */
 }
 
 /* Container e Imagem do Card com 350x350px */
@@ -139,7 +143,8 @@ body {
     border-top: 1px solid #eeeeee;
     display: flex;
     flex-direction: column;
-    flex: 1; /* Preenche o espaço restante caso a altura dos cards divirja */
+    flex: 1;
+    /* Preenche o espaço restante caso a altura dos cards divirja */
 }
 
 .category {
@@ -172,10 +177,98 @@ body {
     padding: 12px;
     border-radius: 4px;
     font-weight: bold;
-    margin-top: auto; /* Empurra o botão para o final do card-info */
+    margin-top: auto;
+    /* Empurra o botão para o final do card-info */
     transition: background-color 0.3s;
 }
 
 .btn-more:hover {
     background-color: #2980b9;
+}
+
+/* ================================
+   Footer
+================================ */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.notification-box p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #ecf0f1;
+    line-height: 1.4;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #c0392b;
 }
