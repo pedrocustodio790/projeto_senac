@@ -48,7 +48,6 @@ body {
 .btn {
     padding: 10px 20px;
     font-size: 16px;
-    font-family: 'CS Regular', sans-serif;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -63,7 +62,6 @@ body {
 .btn-link {
     padding: 8px 15px;
     font-size: 16px;
-    font-family: 'CS Regular', sans-serif;
     border: 1px solid #111214;
     border-radius: 4px;
     cursor: pointer;
@@ -214,7 +212,6 @@ body {
     color: #c8a96e;
     border: 1px solid #111214;
     border-radius: 5px;
-    font-family: 'CS Regular', sans-serif;
     transition: 0.3s;
 }
 .btn-bid-initial:hover {
