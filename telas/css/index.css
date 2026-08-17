@@ -58,6 +58,10 @@ body {
     margin-top: 20px;
 }
 
+.site-slogan {
+    text-align: center;
+}
+
 .site-branding h1 {
     font-size: 2.5rem;
     margin-bottom: 5px;
@@ -120,6 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     /* Centraliza o conteúdo, inclusive a imagem */
 }
 
@@ -131,6 +136,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
+    position: relative;
 }
 
 .card-img {
@@ -145,7 +151,6 @@ body {
     padding: 20px;
     background-color: #111214;
     border-top: 1px solid #c8a96e;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -280,5 +285,5 @@ body {
 }
 
 .newsletter-form button:hover {
-    background-color: #c0392b;
+    background-color: #444444;
 }
