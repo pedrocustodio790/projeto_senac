@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leilão - Site de Leilões</title>
-    <link rel="stylesheet"href="./pagina09.css">
+    <link rel="stylesheet" href="../css/pagina09.css">
 </head>
+
 <body class="body">
     <nav class="navbar">
         <div class="nav-left">
-            <button class="btn">criar conta</button>
-            <button class="btn">entrar</button>
+            <a href="./cadastro.html">
+                <button class="btn">criar conta</button>
+            </a>
+            <a href="./login.html">
+                <button class="btn">entrar</button>
+            </a>
         </div>
         <div class="nav-center">
             <h1 class="site-title">Site de Leilões</h1>
@@ -21,9 +27,9 @@
         </div>
         <div class="nav-right"></div>
     </nav>
-    
+
     <hr class="divider">
-    
+
     <main class="content">
         <div class="product-layout">
             <!-- Esquerda: Carrossel -->
@@ -40,7 +46,7 @@
                     <button class="btn-arrow">&rarr</button>
                 </div>
             </div>
-            
+
             <!-- Centro: Informações -->
             <div class="info-section">
                 <h2 class="product-title">Nome do item</h2>
@@ -56,21 +62,23 @@
                     lectus. Nam mattis, felis ut adipiscing
                 </p>
             </div>
-            
+
             <!-- Direita: Ações de Lance -->
             <div class="bid-section">
                 <button class="btn-bid-initial">lance inicial</button>
                 <button class="btn-bid">dar lance</button>
                 <button class="btn-bid-custom">colocar outro valor acima de R$ 50,00</button>
-                
+
                 <div class="timer-section">
                     <p>Tempo restante</p>
                     <div class="timer">
-                        <span class="time-box">02</span>:<span class="time-box">15</span>:<span class="time-box">30</span>
+                        <span class="time-box">02</span>:<span class="time-box">15</span>:<span
+                            class="time-box">30</span>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
